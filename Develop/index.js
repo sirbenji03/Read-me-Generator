@@ -18,7 +18,7 @@ const questions = [
             {
                 type: "input",
                 message: "Write a brief description of the project?",
-                name: "description",
+                name: "projectDescription",
             },
             {
                 type: "input",
@@ -28,7 +28,7 @@ const questions = [
             {
                 type: "input",
                 message: "What are the steps required to install your project?",
-                name: "Install",
+                name: "Installation",
             },
             {
                 type: "input",
@@ -43,9 +43,9 @@ const questions = [
             },
             {
                 type: "list",
-                message: "What licenses does the project have?",
+                message: "What licenses does the project have. Choose from the license?",
                 name: "license",
-                choices: ["MIT", "Apache 2.0", "GNU 3.0", "BSD 3", "CDDL 1.0", "Mozilla 2.0", "Eclipse 2.0", "None"],
+                choices: ["MIT", "Apache 2.0", "GNU 3.0", "BSD 3", "CDDL 1.0","None"],
             },
             {
                 type: "input",
