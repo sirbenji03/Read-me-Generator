@@ -3,14 +3,12 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const utils = require("utils")
-const generateMarkdown = require("./generateMarkdown");
+
+const generateMarkdown = require("./utils/generateMarkdown");
 
 
 // TODO: Create an array of questions for user input
 const questions = [
-    function getUserInput() {
-        return inquirer
-        .prompt([
             {
                 type: "input",
                 message: "What is your project name?",
@@ -58,9 +56,6 @@ const questions = [
                 message: "What is your email address?",
                 name: "emailAddress",
              }
-
-        ])
-    }
 ];
 
 // TODO: Create a function to write README file

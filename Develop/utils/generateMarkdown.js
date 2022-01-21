@@ -41,9 +41,6 @@ function renderLicenseLink(license) {
   if (license == "CDDL") {
     return "https://opensource.org/licenses/CDDL-1.0";
   }
-  if (license == "Mozilla Public") {
-    return "https://opensource.org/licenses/MPL-2.0";
-  }
   if (license == "Eclipse") {
     return "https://opensource.org/licenses/EPL-2.0";
   } else {
@@ -74,6 +71,7 @@ function generateMarkdown(data) {
   - [Contribution](#contribution)
   - [Tests](#tests)
   - [Questions](#questions)
+
   ## Installation
   The following necessary dependency should be installed to run the aplication,
   ${data.installation}
