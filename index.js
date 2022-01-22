@@ -2,7 +2,7 @@
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-const utils = require("utils")
+//const utils = require("utils")
 
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -11,7 +11,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
             {
                 type: "input",
-                message: "What is your project name?",
+                message: "What is the name of your project?",
                 name: "projectTitle",  
             },
             {
@@ -64,7 +64,7 @@ const questions = [
                 if (err) {
                   console.log(err);
                 } else {
-                  console.log("Md created");
+                  console.log("Md file has been created");
                 }
               });  
 }
